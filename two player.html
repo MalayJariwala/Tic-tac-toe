@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style two player.css">
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay loop muted id="video-background">
+            <source src="game bg.mp4" type="video/mp4">
+        </video>
+    </div>
+
+   <div id="music-toggle">
+    <img id="music-off" src="music off.png" alt="Music On">
+    <img id="music-on" src="music on.png" alt="Music Off">
+</div>
+
+
+    <div id="game">
+        <div class="row">
+            <div class="cell" data-cell-index="0"></div>
+            <div class="cell" data-cell-index="1"></div>
+            <div class="cell" data-cell-index="2"></div>
+        </div>
+        <div class="row">
+            <div class="cell" data-cell-index="3"></div>
+            <div class="cell" data-cell-index="4"></div>
+            <div class="cell" data-cell-index="5"></div>
+        </div>
+        <div class="row">
+            <div class="cell" data-cell-index="6"></div>
+            <div class="cell" data-cell-index="7"></div>
+            <div class="cell" data-cell-index="8"></div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <img src="Winner.png" alt="Crown" class="crown-image">
+          <p id="modal-text"></p>
+          <button id="reset-btn">Reset Game</button>
+      </div>
+  </div>
+
+  <div id="count-board">
+    <h2>Wins</h2>
+    <div class="player-count">
+        <div class="player">X:</div>
+        <div id="x-count">0</div>
+    </div>
+    <div class="player-count">
+        <div class="player">O:</div>
+        <div id="o-count">0</div> 
+    </div>
+</div>
+
+    
+      <audio id="background-audio" autoplay loop>
+        <source src="last audio.mp3" type="audio/mpeg">
+        <!-- other audio formats here -->
+        Your browser does not support the audio element.
+    </audio>
+    
+
+    <script src="script two player.js"></script>
+</body>
+</html>
